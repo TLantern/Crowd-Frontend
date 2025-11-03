@@ -20,50 +20,20 @@ export default function PrivacyPage() {
           </p>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-foreground">Introduction</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-foreground">Data Collection</h2>
             <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
-              At Crowd, we respect your privacy and are committed to protecting your personal data. 
-              This privacy policy explains how we collect, use, and safeguard your information when you use our service.
+              The developer does not collect any data from this app.
+            </p>
+            <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
+              Data is not collected from this app.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-foreground">Information We Collect</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-foreground">Privacy Commitment</h2>
             <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
-              We may collect the following information:
-            </p>
-            <ul className="list-disc pl-6 text-zinc-700 dark:text-zinc-300 space-y-2">
-              <li>Usage data and analytics</li>
-              <li>Device information</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-foreground">How We Use Your Information</h2>
-            <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
-              We use the information we collect to:
-            </p>
-            <ul className="list-disc pl-6 text-zinc-700 dark:text-zinc-300 space-y-2">
-              <li>Provide, maintain, and improve our services</li>
-              <li>Communicate with you about our services</li>
-              <li>Monitor and analyze usage patterns</li>
-              <li>Detect, prevent, and address technical issues</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-foreground">Data Security</h2>
-            <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
-              We implement appropriate technical and organizational measures to protect your personal data 
-              against unauthorized access, alteration, disclosure, or destruction.
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-foreground">Your Rights</h2>
-            <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
-              You have the right to access, update, or delete your personal information at any time. 
-              Please contact us if you wish to exercise these rights.
+              At Crowd, we respect your privacy. Since we do not collect any data, there is no personal information 
+              to store, share, or secure. Your privacy is protected by design.
             </p>
           </section>
 
