@@ -38,6 +38,16 @@ export default function PrivacyPage() {
           </section>
 
           <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-foreground">Content Policy</h2>
+            <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed mb-4">
+              We have zero tolerance for objectionable content and abusive users.
+            </p>
+            <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              Users who post or engage in hate speech, threats, harassment, explicit sexual content, or other objectionable content may be removed and banned without notice.
+            </p>
+          </section>
+
+          <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-foreground">Contact Us</h2>
             <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
               If you have any questions about this Privacy Policy, please contact us.
