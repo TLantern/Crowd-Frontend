@@ -10,10 +10,6 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-if (!firebaseConfig.projectId) {
-  throw new Error("NEXT_PUBLIC_FIREBASE_PROJECT_ID is required");
-}
-
 const app =
   getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 
