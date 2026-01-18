@@ -32,14 +32,23 @@ async function fetchEventById(eventId: string) {
 
     if (partySnap.exists()) {
       const d = partySnap.data();
+      const normalized = d.normalized || {};
+      const eventDetails = d.eventDetails || {};
+      
+      const dateTime = eventDetails?.dateTime 
+        || eventDetails?.datetime
+        || normalized?.dateTime 
+        || normalized?.datetime 
+        || d.rawDateTime;
+      
       return {
         id: eventId,
-        title: d.title || "Crowd Event",
-        date: d.rawDateTime || "Date TBD",
-        startISO: d.startTimeISO || null,
-        location: d.location || "Location TBD",
-        imageUrl: d.imageUrl || null,
-        organization: d.organization || null,
+        title: normalized?.title || d.title || "Crowd Event",
+        date: dateTime || "Date TBD",
+        startISO: normalized?.startTimeISO || d.startTimeISO || null,
+        location: eventDetails?.address || normalized?.address || d.location || "Location TBD",
+        imageUrl: normalized?.imageUrl || d.imageUrl || null,
+        organization: normalized?.locationName || d.organization || null,
         source: "party",
       };
     }
@@ -94,8 +103,8 @@ export default async function EventPage({ params }: Props) {
           <Image
             src={event.imageUrl}
             alt={event.title}
-            width={1200}
-            height={675}
+            width={event.source === "party" ? 600 : 1200}
+            height={event.source === "party" ? 338 : 675}
             style={{ width: "100%", height: "auto" }}
           />
         </div>
