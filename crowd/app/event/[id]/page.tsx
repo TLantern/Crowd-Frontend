@@ -27,7 +27,7 @@ async function fetchEventById(eventId: string) {
     }
 
     // Fallback: try linktree / party events
-    const partyRef = doc(db, "events_from_linktree", eventId);
+    const partyRef = doc(db, "events_from_linktree_raw", eventId);
     const partySnap = await getDoc(partyRef);
 
     if (partySnap.exists()) {
